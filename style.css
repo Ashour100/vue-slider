@@ -1,0 +1,75 @@
+body{
+    font-family: "Montserrat", sans-serif;
+}
+
+div.my-carousel-container{
+    /* min-height: 700px;
+    min-width:800px ;
+    background-color: aquamarine; */
+    position:relative;
+}
+/* 
+div.my-carousel-images{
+    background-color: cadetblue;
+    min-height: 540px;
+} */
+
+div.my-thumbnails{
+    /* background-color: violet; */
+    display: flex;
+}
+
+div.my-previous,
+div.my-next,
+.reverse{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, .5);
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+div.my-previous{
+    left: 1rem;
+}
+
+div.my-next{
+    right: 1rem;
+}
+div.reverse{
+    top: 4%;
+    left: 3.2rem;
+}
+
+div.my-previous > span::after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f104";
+    line-height: 30px;
+}
+
+div.my-next > span::after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f105";
+    line-height: 30px;
+}
+div.reverse > span::after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f0ec";
+    line-height: 30px;
+}
+.overlay{
+    background-color: rgba(0, 0, 0, 0.459);
+    top: 0;
+    left: 0;
+}
+.active .overlay{
+    background-color: rgba(0, 0, 0, 0);
+}
+
